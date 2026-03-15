@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: hsl(0, 0%, 94%);
+    --font-inter: 'Inter', Sans-serif;
+}
+
+.dark {
+    --color-white: #000;
+    --color-black: #fff;
+    --color-gray: hsl(0, 0%, 54%);
+}
+
+@layer base {
+    body {
+        @apply bg-white text-black font-inter;
+    }
+}
+
+@layer components {
+    .container-card {
+        @apply container mx-auto px-3 md:px-0;
+    }
+}
+
+@layer chart-styles {
+    .dashboard-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .chart-container {
+        width: 90%;
+        height: 50vh;
+        margin: 3.5rem auto 10px auto;
+        padding: 0 10px 20px 10px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        flex-grow: 1;
+
+        @apply bg-gray border border-gray-500;
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        width: 90%;
+        border-radius: 5px;
+        margin: 5px auto 20px auto;
+        padding: 8px;
+        border: 1px solid #e4e4e4;
+        flex-shrink: 0;
+    }
+}
