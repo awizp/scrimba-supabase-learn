@@ -8,49 +8,42 @@ This project is part of my exploration of Supabase as a backend service and how 
 
 In this project I implemented a simple workflow where:
 
-Data is stored in Supabase (PostgreSQL database)
+* Data is stored in Supabase (PostgreSQL database)
 
-The React application connects to Supabase using the Supabase client
+* The React application connects to Supabase using the Supabase client
 
-Data is fetched from the database
+* Data is fetched from the database
 
-The retrieved data is processed in the frontend
+* The retrieved data is processed in the frontend
 
-The dataset is visualized using bar charts
+* The dataset is visualized using bar charts
 
-This helped me understand the end-to-end flow between backend data and frontend visualization.
+* This helped me understand the end-to-end flow between backend data and frontend visualization.
 
 ### Features Implemented
 
-Supabase project setup
+* Supabase project setup
 
-Database data retrieval using Supabase client
+* Database data retrieval using Supabase client
 
-React frontend integration
+* React frontend integration
 
-Dynamic data rendering
+* Dynamic data rendering
 
-Data visualization using React Charts (Bar Chart)
+* Data visualization using React Charts (Bar Chart)
 
 ### Tech Stack
 
-Frontend: React
+* Frontend: React
 
-Backend Service: Supabase
+* Backend Service: Supabase
 
-Database: PostgreSQL (via Supabase)
+* Database: PostgreSQL (via Supabase)
 
-Visualization: React Charts
+* Visualization: React Charts
 
-Language: JavaScript
+* Language: JavaScript
 
-### Project Structure
-
-src
- ├── components
- ├── charts
- ├── supabaseClient.js
- └── App.js
 
 ### Getting Started
 
@@ -70,20 +63,20 @@ src
 
 Through this project I learned:
 
-How to connect a React app with Supabase
+* How to connect a React app with Supabase
 
-Fetching and handling database data
+* Fetching and handling database data
 
-Structuring API calls using the Supabase client
+* Structuring API calls using the Supabase client
 
-Visualizing backend data in the frontend using charts
+* Visualizing backend data in the frontend using charts
 
 ### Future Improvements
 
-Add data creation from the UI
+* Add data creation from the UI
 
-Implement update and delete operations
+* Implement update and delete operations
 
-Add Supabase authentication
+* Add Supabase authentication
 
-Create a dashboard-style UI for analytics
+* Create a dashboard-style UI for analytics
