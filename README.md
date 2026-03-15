@@ -1,16 +1,89 @@
-# React + Vite
+## Supabase + React Data Visualization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small learning project demonstrating how to connect a React frontend with Supabase, retrieve stored data, and visualize it using React Charts.
 
-Currently, two official plugins are available:
+This project is part of my exploration of Supabase as a backend service and how it integrates with modern frontend frameworks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Project Overview
 
-## React Compiler
+In this project I implemented a simple workflow where:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Data is stored in Supabase (PostgreSQL database)
 
-## Expanding the ESLint configuration
+The React application connects to Supabase using the Supabase client
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Data is fetched from the database
+
+The retrieved data is processed in the frontend
+
+The dataset is visualized using bar charts
+
+This helped me understand the end-to-end flow between backend data and frontend visualization.
+
+### Features Implemented
+
+Supabase project setup
+
+Database data retrieval using Supabase client
+
+React frontend integration
+
+Dynamic data rendering
+
+Data visualization using React Charts (Bar Chart)
+
+### Tech Stack
+
+Frontend: React
+
+Backend Service: Supabase
+
+Database: PostgreSQL (via Supabase)
+
+Visualization: React Charts
+
+Language: JavaScript
+
+### Project Structure
+
+src
+ ├── components
+ ├── charts
+ ├── supabaseClient.js
+ └── App.js
+
+### Getting Started
+
+1 Clone the repository
+    git clone https://github.com/awizp/scrimba-supabase-learn.git
+
+2 Navigate to the project
+    cd scrimba-supabase-learn
+
+3 Install dependencies
+    npm install
+
+4 Run the development server
+    npm run dev
+
+### Learning Outcomes
+
+Through this project I learned:
+
+How to connect a React app with Supabase
+
+Fetching and handling database data
+
+Structuring API calls using the Supabase client
+
+Visualizing backend data in the frontend using charts
+
+### Future Improvements
+
+Add data creation from the UI
+
+Implement update and delete operations
+
+Add Supabase authentication
+
+Create a dashboard-style UI for analytics
